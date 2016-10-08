@@ -1,10 +1,22 @@
+/**
+	Nombres(s): Altamirnao Leal Jose ALfonso
+	Nombres(s): Vázquez Jiménez Juan Manuel
+*/
 #include "ArbolP.h"
-
+/**
+constructor arbol
+@params orig
+@result void
+*/
 ArbolP::ArbolP(std::vector<int> orig)
 {
 	this->Raiz = new NodoA(orig);
 }
-
+/**
+metdodo para añadir nodo
+@params ref, aux
+@result bool
+*/
 bool ArbolP::AddNodo(std::vector<int> ref,std::vector<int> aux)
 {
 	if(this->Raiz==NULL)
@@ -27,6 +39,11 @@ bool ArbolP::AddNodo(std::vector<int> ref,std::vector<int> aux)
 	return true;
 }
 
+/**
+metdodo para eliminar nodo 
+@params ref
+@result bool
+*/
 bool ArbolP::ElimNodo(std::vector<int> ref)
 {
 	if (this->Raiz==NULL)
@@ -57,6 +74,11 @@ bool ArbolP::ElimNodo(std::vector<int> ref)
 	return false;
 }
 
+/**
+el camino de un nodo en el arbol
+@params  aux
+@result 
+*/
 std::stack<NodoA*> ArbolP::Camino(NodoA* aux)
 {
 	std::stack<NodoA*> Camino;
@@ -66,7 +88,11 @@ std::stack<NodoA*> ArbolP::Camino(NodoA* aux)
 	}
 	return Camino;
 }
-
+/**
+busqueda de un nodo en el arbol
+@params  ref
+@result NodoA*
+*/
 NodoA* ArbolP::BusqNodo(std::vector<int> ref)
 {
 	if(Raiz==NULL)
@@ -76,7 +102,11 @@ NodoA* ArbolP::BusqNodo(std::vector<int> ref)
 	}
 	return BusqRec(ref,Raiz);
 }
-
+/**
+el camino de un nodo en el arbol
+@params  ref,aux
+@result NodoA*
+*/
 NodoA* ArbolP::BusqRec(std::vector<int> ref, NodoA* aux)
 {
 	NodoA* Busque=aux;

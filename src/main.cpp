@@ -1,3 +1,7 @@
+/**
+	Nombres(s): Altamirnao Leal Jose ALfonso
+	Nombres(s): Vázquez Jiménez Juan Manuel
+*/
 #include "ArbolP.h"
 
 int main(){

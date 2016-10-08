@@ -1,3 +1,9 @@
+/**
+	Nombres(s): Altamirnao Leal Jose ALfonso
+	Nombres(s): Vázquez Jiménez Juan Manuel
+	Descripcion:clase arbol con sus metodos y atributos
+	
+*/
 #include <stack>
 #include "NodoA.h"
 

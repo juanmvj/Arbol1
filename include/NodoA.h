@@ -1,3 +1,8 @@
+/**
+	Nombres(s): Altamirnao Leal Jose ALfonso
+	Nombres(s): Vázquez Jiménez Juan Manuel
+	Descripcion:clase nodo con atributos y metodos
+*/
 #include <iostream>
 #include <vector>
 
